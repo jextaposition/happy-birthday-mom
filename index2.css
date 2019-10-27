@@ -1,0 +1,81 @@
+
+html {
+  background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/711cb8fc-43d7-4a59-84b1-aadcadb32e7f/dcx1jh8-006c3cdf-e53f-4f66-9748-811b0c87c7b0.jpg/v1/fill/w_1024,h_576,q_75,strp/bahamas_flag_wallpaper____grungy_splatter_by_garyckarntzen_dcx1jh8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvNzExY2I4ZmMtNDNkNy00YTU5LTg0YjEtYWFkY2FkYjMyZTdmXC9kY3gxamg4LTAwNmMzY2RmLWU1M2YtNGY2Ni05NzQ4LTgxMWIwYzg3YzdiMC5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.0dz9aVG502NM1tKZggEpbvLKSut6MUs4hEWCEJOjtGU") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity:0.9;
+
+}
+
+body {
+  font-family: Pacifico, cursive;
+}
+
+h2 {
+ color: white;
+ text-align: left;
+ position: fixed;
+ left: 5%;
+}
+
+
+.heart {
+  background-color: white;
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  transform: rotate(-45deg);
+  top: 0;
+  position: absolute;
+  left: 50%;
+  top:30%
+
+
+}
+.heart {
+  animation: heartbeat 1.2s infinite;
+
+  }
+.heart::before,
+.heart::after {
+    position: absolute;
+    content:"";
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .heart::before {
+    top:-200px;
+    left: 0;
+  }
+  .heart::after {
+    left: 200px;
+    top: 0;
+  }
+
+  @keyframes heartbeat {
+    0% {
+      transform: rotate(-45deg) scale(1)
+    }
+    5%{
+      transform: rotate(-45deg) scale(0.9);
+    }
+    10% {
+      transform: rotate(-45deg) scale(0.8);
+    }
+    15%{
+      transform: rotate(-45deg) scale(1);
+    }
+    50%{
+      transform: rotate(-45deg) scale(0.8);
+    }
+    100%{
+      transform: rotate(-45deg) scale(0.8);
+    }
+
+  }
